@@ -10,7 +10,7 @@ const reiniciarJogoButton = document.getElementById("reiniciarJogo");
 
 function updatePontuacao() {
   pontuacao++;
-  jogoInfo.innerHTML = `V 1.0.9 | Pontuação: <span id="pontuacao" style="color: gold;">${pontuacao}</span>`;
+  jogoInfo.innerHTML = `Pontuação: <span id="pontuacao" style="color: gold;">${pontuacao}</span>`;
 }
 
 function personagemPassouPeloCharizard() {
@@ -86,11 +86,5 @@ document.addEventListener("keydown", () => {
 
 function reiniciarJogo() {
   location.reload();
-}
+};
 
-const mostrarAtualizacoesButton = document.getElementById("mostrarAtualizacoes");
-const atualizacoesContent = "\n- **Já estamos trabalhando em um novo fundo/personagens** Próximas atualizações:\n- Melhoria na interface de usuário\n- Melhorias na jogabilidade\n- Som e Musica\n- Novas Fases\n- Quadro De Lideres\n- Multijogador\n- Obstáculos\n- Power-ups\n- Missões\n- Melhorias na jogabilidade mobile\n- Novos Modos\n- Conquistas\n- Moedas\n- Próxima atualização: 1.0.10";
-
-mostrarAtualizacoesButton.addEventListener("click", () => {
-  alert(atualizacoesContent); 
-});

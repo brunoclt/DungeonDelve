@@ -10,7 +10,7 @@
         width: 50vw;
     }
     .charizard {
-        width: 50vw;
+        width: 40vw;
     }
 
     .game-board {
@@ -204,34 +204,25 @@ img {
     color: white; 
   }
 
-.color-changing-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    animation: changeTextColor 7s infinite; 
-    background: rgba(255, 255, 255, 0.7); 
-}
+.button {
+    
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #660000;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 10px;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        width: 200px; /* Defina a largura desejada para os botões */
+      }
 
-@keyframes changeTextColor {
-    0%, 100% { color: red; } /* Vermelho */
-    16.67% { color: orange; } /* Laranja */
-    33.33% { color: yellow; } /* Amarelo */
-    50% { color: green; } /* Verde */
-    66.67% { color: blue; } /* Azul */
-    83.33% { color: indigo; } /* Anil */
-}
-  
-.color-changing-button:hover {
-    opacity: 0.9;
-    transition: opacity 0.3s ease-in-out;
-}
-  
-.color-changing-button:not(:hover) {
-    transition: opacity 0.3s ease-in-out;
-}
+.button:hover {
+        background-color: #990000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+    }

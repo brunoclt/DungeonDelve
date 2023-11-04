@@ -6,7 +6,6 @@
     <title>Dungeon Delve</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
-
 </head>
 <body>
     <div class="title">DUNGEON DELVE</div>
@@ -15,14 +14,157 @@
     </div>
 
     <div class="menu">
-        
         <a href="game.html" class="button">Iniciar</a>
-        <a href="#sobre.html" class="button">Ranking</a>
-        <a href="#" class="button">Configurações</a>
-        <a href="#" class="button">Atualizações</a>
-        <a href="./Sobre/sobre.html" class="button">Sobre nós</a>
+
+        <a class="button" onclick="showImageWithItemsConfig()">Ranking</a>
+        <div id="overlayconfig" class="overlayconfig">
+            <div class="overlay-contentconfig">
+                <p>
+                    Em breve!
+                </p>
+                <button id="close-button" onclick="closeOverlayConfig()">Fechar</button>
+             </div>
+        </div>
+
+        <a class="button" onclick="showImageWithItemsConfig()">Configurações</a>
+        <div id="overlayconfig" class="overlayconfig">
+            <div class="overlay-contentconfig">
+                <p>
+                    Em breve!
+                </p>
+                <button id="close-button" onclick="closeOverlayConfig()">Fechar</button>
+             </div>
+        </div>
+
+        <a class="button" onclick="showImageWithItemsAtt()">Atualizações</a>
+        <div id="overlayatt" class="overlayatt">
+            <div class="overlay-contentatt">
+                <p>
+                    Já estamos trabalhando em um novo personagem
+                    <br>
+                    <br>
+                    Próximas atualizações:
+                    <br>
+                    <br>
+                    Melhoria na interface de usuário
+                    <br>
+                    Melhorias na jogabilidade
+                    <br>
+                    Salvar pontuação
+                    <br>
+                    Som e Musica
+                    <br>
+                    Novas Fases
+                    <br>
+                    Quadro De Lideres
+                    <br>
+                    Obstáculos
+                    <br>
+                    Power-ups
+                    <br>
+                    Missões
+                    <br>
+                    Melhorias na jogabilidade mobile
+                    <br>
+                    Novos Modos
+                    <br>
+                    Conquistas
+                    <br>
+                    Moedas
+                    <br>
+                </p>
+                <button id="close-button" onclick="closeOverlayConfigAtt()">Fechar</button>
+            </div>
+        </div>
+
+        <a class="button" onclick="showImageWithItemsSobre()">Sobre nós</a>
+        <div id="overlaysobre" class="overlaysobre">
+            <div class="overlay-contentsobre">
+                <p>
+                    Bem-vindo ao Dungeon Delve!
+                    <br>
+                    Inspirado no jogo do dinossauro do Google. 
+                    <br>
+                    Feito com HTML, CSS e JavaScript. 
+                    <br>
+                    <br>
+                    Caso queira entrar em contato: 
+                    <br>
+                    delvedungeon@gmail.com 
+                    <br>
+                    <br>
+                    Desenvolvido por: 
+                    <br>
+                    Bruno Terceti |
+                    Desenvolvimento e Programação 
+                    <br>
+                    Kauã Nascimento |
+                    Design e Desenvolvimento
+                    <br>
+                    Kauã Zuba |
+                    Design e Desenvolvimento
+                    <br>
+                    Henrique Targino |
+                    Design e Desenvolvimento
+                    <br>
+                    Giovana |
+                    Design 
+                    <br>
+                    Ashley |
+                    Design
+                </p>
+                <button id="close-button" onclick="closeOverlaySobre()">Fechar</button>
+            </div>
+        </div>
     </div>
 
     <div class="overlay"></div>
+
+    <div class="version">V 0.0.10</div>
+
+    <script>
+        function showImageWithItemsSobre() {
+            var overlay = document.getElementById('overlaysobre');
+            overlay.style.display = 'block';
+        }
+    
+        function closeOverlaySobre() {
+            var overlay = document.getElementById('overlaysobre');
+            overlay.style.display = 'none';
+        }
+        ////////////////////////////////////////////////
+        function showImageWithItemsConfig() {
+            var overlay = document.getElementById('overlayconfig');
+            overlay.style.display = 'block';
+        }
+        
+        function closeOverlayConfig() {
+            var overlay = document.getElementById('overlayconfig');
+            overlay.style.display = 'none';
+        }
+        ////////////////////////////////////////////////
+        function showImageWithItemsConfig() {
+            var overlay = document.getElementById('overlayconfig');
+            overlay.style.display = 'block';
+        }
+    
+        function closeOverlayConfig() {
+            var overlay = document.getElementById('overlayconfig');
+            overlay.style.display = 'none';
+        }
+        ////////////////////////////////////////////////
+        function showImageWithItemsAtt() {
+            var overlay = document.getElementById('overlayatt');
+            overlay.style.display = 'block';
+        }
+    
+        function closeOverlayConfigAtt() {
+            var overlay = document.getElementById('overlayatt');
+            overlay.style.display = 'none';
+        }
+        ////////////////////////////////////////////////
+
+    </script>
+
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Dungeon Delve</title>
     <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
     <style>
-        .overlay {
+        .overlaysobre {
             display: none;
             position: fixed;
             top: 0;
@@ -24,44 +24,105 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: #fff;
-            padding: 20px;
+            padding: 35px;
             border: 1px solid #000;
             background: url('../assets/backgroudnmenubutton.jpg');
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centralize verticalmente */
         }
 
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+        #close-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #660000;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
             cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+            width: 200px; /* Defina a largura desejada para os botões */
+        }
+        #close-button:hover {
+            background-color: #990000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
         }
     </style>
 </head>
 <body>
     <button onclick="showImageWithItems()">Mostrar Imagem com Itens</button>
 
-    <div id="overlay" class="overlay">
+    <div id="overlaysobre" class="overlaysobre">
         <div class="overlay-content">
-            <img src="../assets/backgroudnmenubutton.jpg" alt="Imagem de fundo">
             <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
+                <p>
+                    Bem-vindo ao Dungeon Delve!
+                    <br>
+                    Inspirado no jogo do dinossauro do Google. 
+                    <br>
+                    Feito com HTML, CSS e JavaScript. 
+                    <br>
+                    <br>
+                    Caso queira entrar em contato: 
+                    <br>
+                    delvedungeon@gmail.com 
+                    <br>
+                    <br>
+                    Desenvolvido por: 
+                    <br>
+                    Bruno Terceti |
+                    Desenvolvimento e Programação 
+                    <br>
+                    Kauã Nascimento |
+                    Design e Desenvolvimento
+                    <br>
+                    Kauã Zuba |
+                    Design e Desenvolvimento
+                    <br>
+                    Henrique Targino |
+                    Design e Desenvolvimento
+                    <br>
+                    Giovana |
+                    Design 
+                    <br>
+                    Ashley |
+                    Design
+                </p>
             </ul>
-            <button class="close-button" onclick="closeOverlay()">Fechar</button>
+            <button id="close-button" onclick="closeOverlay()">Fechar</button>
         </div>
     </div>
 
     <script>
         function showImageWithItems() {
-            var overlay = document.getElementById('overlay');
+            var overlay = document.getElementById('overlaysobre');
             overlay.style.display = 'block';
         }
 
         function closeOverlay() {
-            var overlay = document.getElementById('overlay');
+            var overlay = document.getElementById('overlaysobre');
             overlay.style.display = 'none';
         }
     </script>
 </body>
 </html>
+
+
+
+<script>
+    function showImageWithItems() {
+        var overlay = document.getElementById('overlaysobre');
+        overlay.style.display = 'block';
+    }
+
+    function closeOverlay() {
+        var overlay = document.getElementById('overlaysobre');
+        overlay.style.display = 'none';
+    }
+</script>

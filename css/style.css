@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/horror-type');
 
+
 body {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -87,3 +88,155 @@ body {
       opacity: 0; /* Retorna à transparência inicial */
     }
   }
+
+  .version {
+    position: absolute;
+    bottom: 10px;
+    left: 90%;
+    color: #990000;
+    font-size: 20px;
+}
+
+  .overlaysobre {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    text-align: center;
+}
+
+.overlay-contentsobre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 35px;
+    border: 1px solid #000;
+    background: url('../assets/backgroudnmenubutton.jpg');
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralize verticalmente */
+}
+
+#close-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #660000;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    width: 200px; /* Defina a largura desejada para os botões */
+}
+#close-button:hover {
+    background-color: #990000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+}
+
+.overlayconfig {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  text-align: center;
+}
+
+.overlay-contentconfig {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 35px;
+  border: 1px solid #000;
+  background: url('../assets/backgroudnmenubutton.jpg');
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralize verticalmente */
+}
+
+#close-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #660000;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  width: 200px; /* Defina a largura desejada para os botões */
+}
+#close-button:hover {
+  background-color: #990000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+}
+
+.overlayatt {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  text-align: center;
+}
+
+.overlay-contentatt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 35px;
+  border: 1px solid #000;
+  background: url('../assets/backgroudnmenubutton.jpg');
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralize verticalmente */
+}
+
+#close-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #660000;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  width: 200px; /* Defina a largura desejada para os botões */
+}
+#close-button:hover {
+  background-color: #990000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+}
