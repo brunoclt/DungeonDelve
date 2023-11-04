@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+@media (max-width: 767px) {
+    .personagem {
+        width: 50vw;
+    }
+    .charizard {
+        width: 50vw;
+    }
+
+    .game-board {
+        height: 300px;
+    }
+
+    #mostrarAtualizacoes {
+        top: 50px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(blue , white);
+}
+
+.cenario {
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.dribbble.com/users/336977/screenshots/2040007/dungeon_preview_dribbble.gif');
+}
+
+.charizard {
+    position: absolute;
+    bottom: -60px;
+    width: 300px;
+    animation: charizard-animation 1.7s infinite linear;
+    background: none;
+}
+
+.pig {
+    position: absolute;
+    bottom: -10px;
+    width: 500px;
+    animation: pig-animation 1.2s infinite linear;
+    background: none;
+}
+
+#pig {
+    display: none;
+}
+
+@keyframes charizard-animation {
+    from {
+        right: -300px;
+    }
+
+    to { 
+        right: 100%;
+    }
+}
+
+@keyframes pig-animation {
+    from {
+        right: -500px;
+    }
+
+    to { 
+        right: 100%;
+    }
+}
+
+.personagem {
+    position: absolute;
+    width: 250px;
+    bottom: -85px;
+    background: none;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes jump {
+
+    0% { 
+        bottom: -85px;
+    }
+
+    40% { 
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: -85px;
+    }
+
+}
+
+.jogo {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    background: none;
+    z-index: 1;
+}
+
+.jogo span {
+    font-weight: bold;
+    color: #FFD700; 
+    background: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} 
+
+
+
+.tela-gameover {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.tela-gameover h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.pontuacao-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pontuacao-text span {
+    color: gold;
+    font-weight: bold;
+}
+
+.pontos-text {
+    font-size: 18px;
+    color: gold;
+}
+
+.tela-gameover button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.tela-gameover button:hover {
+    background-color: #00ff0d; 
+}
+
+.hidden {
+    display: none;
+}
+
+.tela-gameover:not([hidden]) {
+    display: block;
+}
+
+.jogo.game-over {
+    color: white; 
+  }
+
+.color-changing-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: changeTextColor 7s infinite; 
+    background: rgba(255, 255, 255, 0.7); 
+}
+
+@keyframes changeTextColor {
+    0%, 100% { color: red; } /* Vermelho */
+    16.67% { color: orange; } /* Laranja */
+    33.33% { color: yellow; } /* Amarelo */
+    50% { color: green; } /* Verde */
+    66.67% { color: blue; } /* Azul */
+    83.33% { color: indigo; } /* Anil */
+}
+  
+.color-changing-button:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+.color-changing-button:not(:hover) {
+    transition: opacity 0.3s ease-in-out;
+}

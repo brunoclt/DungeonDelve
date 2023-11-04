@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Delve</title>
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <div class="game-board">
+            <img src="./assets/tree.gif" class="charizard">
+            <img src="./assets/personagem-unscreen.gif" class="personagem"> 
+            <img src="./assets/pig.gif" class="pig" id="pig">
+
+        <div class="cenario">
+
+        </div>
+
+            <p class="jogo">V 1.0.9 | Pontuação: <span id="pontuacao">0</span></p>
+    </div>
+
+    <div id="telaFinalizar" class="tela-gameover" hidden>
+        <h1>Game Over</h1>
+        <p class="pontuacao-text">Pontuação: <span id="pontuacaoFinal"></span> <span class="pontos-text">pontos.</span></p>
+        <button id="reiniciarJogo">Reiniciar Jogo</button>
+    </div>
+
+    <button id="mostrarAtualizacoes" class="color-changing-button">Futuras Atualizações</button>
+    <a href="index.html" class="button">Voltar para o menu</a>
+    
+    
+    <script src="script.js" defer></script>
+</body>
+</html> 
