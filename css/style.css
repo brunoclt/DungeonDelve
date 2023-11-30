@@ -49,12 +49,12 @@ body {
     margin: 10px;
     transition: background-color 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    width: 200px; /* Defina a largura desejada para os botões */
+    width: 200px; 
 }
   
 .button:hover {
     background-color: #990000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
 }
 
   .overlay {
@@ -68,24 +68,24 @@ body {
     background: url('../assets/help.jpg');
     background-size: cover;
     animation: flicker 15s infinite;
-    opacity: 0.4; /* Ajuste o valor conforme desejado (por exemplo, 0.7 para 70% de opacidade) */
+    opacity: 0.4; 
   }
   
   @keyframes flicker {
     0% {
-      opacity: 0; /* Começa mais transparente */
+      opacity: 0; 
     }
     25% {
       opacity: 0.1;
     }
     50% {
-      opacity: 0.4; /* Aumenta a opacidade */
+      opacity: 0.4; 
     }
     75% {
       opacity: 0.1;
     }
     100% {
-      opacity: 0; /* Retorna à transparência inicial */
+      opacity: 0; 
     }
   }
 
@@ -121,7 +121,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centralize verticalmente */
+    align-items: center; 
 }
 
 #close-button {
@@ -138,11 +138,11 @@ body {
     margin: 10px;
     transition: background-color 0.3s, box-shadow 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    width: 200px; /* Defina a largura desejada para os botões */
+    width: 200px; 
 }
 #close-button:hover {
     background-color: #990000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
 }
 
 .overlayconfig {
@@ -169,7 +169,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centralize verticalmente */
+  align-items: center; 
 }
 
 #close-button {
@@ -186,11 +186,11 @@ body {
   margin: 10px;
   transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  width: 200px; /* Defina a largura desejada para os botões */
+  width: 200px; 
 }
 #close-button:hover {
   background-color: #990000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
 }
 
 .overlayatt {
@@ -217,7 +217,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centralize verticalmente */
+  align-items: center; 
 }
 
 #close-button {
@@ -234,9 +234,9 @@ body {
   margin: 10px;
   transition: background-color 0.3s, box-shadow 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  width: 200px; /* Defina a largura desejada para os botões */
+  width: 200px; 
 }
 #close-button:hover {
   background-color: #990000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
 }

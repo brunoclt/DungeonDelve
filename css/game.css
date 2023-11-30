@@ -50,18 +50,6 @@ img {
     background: none;
 }
 
-.pig {
-    position: absolute;
-    bottom: -10px;
-    width: 500px;
-    animation: pig-animation 1.2s infinite linear;
-    background: none;
-}
-
-#pig {
-    display: none;
-}
-
 @keyframes charizard-animation {
     from {
         right: -300px;
@@ -72,15 +60,24 @@ img {
     }
 }
 
+.pig {
+    position: absolute;
+    bottom: -60px;
+    width: 300px;
+    animation: pig-animation 1.3s infinite linear;
+    background: none;
+}
+
 @keyframes pig-animation {
     from {
-        right: -500px;
+        right: -300px;
     }
 
     to { 
         right: 100%;
     }
 }
+
 
 .personagem {
     position: absolute;
@@ -133,9 +130,7 @@ img {
     color: #FFD700; 
     background: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} 
-
-
+}
 
 .tela-gameover {
     display: none;
@@ -202,27 +197,68 @@ img {
 
 .jogo.game-over {
     color: white; 
-  }
+}
 
 .button {
-    
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #660000;
-        color: #fff;
-        font-size: 18px;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        margin: 10px;
-        transition: background-color 0.3s, box-shadow 0.3s;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-        width: 200px; /* Defina a largura desejada para os botões */
-      }
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #660000;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    width: 200px; 
+}
 
 .button:hover {
-        background-color: #990000;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Aumente ligeiramente a sombra ao passar o mouse */
+    background-color: #990000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+#imagemADesaparecer {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+    display: none;
+    z-index: 1;
+    animation: pig-animation 1.25s infinite linear;
+    background: none;
+}
+
+@keyframes pig-animation {
+    from {
+        right: -500px;
     }
+
+    to { 
+        right: 100%;
+    }
+}
+
+.mensagem {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #333;
+    margin: 0 auto;
+    animation: mensagem-animation 10s linear;
+}
+
+@keyframes mensagem-animation {
+    0%, 100% { color: red; } 
+    16.67% { color: orange; } 
+    33.33% { color: yellow; } 
+    50% { color: green; } 
+    66.67% { color: blue; } 
+    83.33% { color: indigo; } 
+} 
